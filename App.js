@@ -47,7 +47,7 @@ Below is the code to achieve nested elments. Also if we need sibling elements, t
 */
 
 const treeStructure = React.createElement(
-    "div", { id: "parent"},m
+    "div", { id: "parent"},
     [
         React.createElement(
             "div", { id: "child1" },
