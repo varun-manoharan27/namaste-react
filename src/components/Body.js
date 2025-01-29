@@ -25,11 +25,7 @@ const Body = () => {
         setFilteredRestaurants(allFetchedRestaurants)
     }
 
-    if (listOfRestaurant.length === 0) {
-        return <Shimmer />
-    }
-
-    return (
+    return (listOfRestaurant.length === 0) ? <Shimmer /> :(
         <div>
             <input type='text' onChange={(event) => {setSearchValue(event.target.value);}} />
 
